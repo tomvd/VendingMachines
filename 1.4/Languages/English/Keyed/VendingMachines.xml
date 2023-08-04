@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <VendingMachines_VendingMachine>Vending machine</VendingMachines_VendingMachine>
+    <VendingMachines_VendingMachineContains>Contains:</VendingMachines_VendingMachineContains>
+    <VendingMachines_VendingMachineTotal>Lifetime earnings:</VendingMachines_VendingMachineTotal>
+    <VendingMachines_VendingMachineToggleDesc>Allow guests to use this facility.</VendingMachines_VendingMachineToggleDesc>
+    <!-- pricing -->
+    <VendingMachines_SetPricing>Set Pricing</VendingMachines_SetPricing>
+    <VendingMachines_Free>Give for free</VendingMachines_Free>
+    <VendingMachines_Low>give 25% discount</VendingMachines_Low>
+    <VendingMachines_Medium>Default pricing</VendingMachines_Medium>
+    <VendingMachines_High>make 25% extra profit</VendingMachines_High>
+    <EmptyAfterHours>Empty every vending machine after X hours</EmptyAfterHours>
+    <EmptyAfterHoursTooltip>If a vending machine has not been emptied after this number of hours, somebody will need to come and empty it.</EmptyAfterHoursTooltip>
+</LanguageData>

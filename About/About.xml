@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Hospitality: Vending machines</name>
+	<author>Adamas</author>
+	<packageId>Adamas.VendingMachines</packageId>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<description>
+		Adds a vending machine, and a fridge vending machine if rimfridge or simple fridge is installed.
+		Guests can buy items here, and you can roughly set a pricing strategy.
+		It fills the gap between the hospitality shopping area and the hospitality storefront.
+		A vending machine requires a small bit of electricity. It requires you to research Complex Furniture.
+	</description>
+	<modDependencies>
+		<li>
+			<packageId>Orion.Hospitality</packageId>
+			<displayName>Hospitality</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2553700067</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Orion.Hospitality</li>
+	</loadAfter>
+</ModMetaData>

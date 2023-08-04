@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>RimFridge: Now with Shelves!</li>
+            <li>RimFridge Updated</li>
+        </mods>
+        <!-- basically adds fully functional fridge, but as a vending machine -->
+        <match Class="PatchOperationAdd">
+            <xpath>Defs</xpath>
+            <value>
+                <ThingDef ParentName="FridgeBase">
+                    <defName>RimFridgeVendingMachine</defName>
+                    <label>fridge vending machine</label>
+                    <description>A vending machine to sell perishable food to guests.</description>
+                    <designationCategory>Misc</designationCategory>
+                    <graphicData>
+                        <texPath>Things/Building/FridgeVendingMachine/FridgeVendingMachine</texPath>
+                        <graphicClass>Graphic_Multi</graphicClass>
+                        <drawSize>(3.5,3.5)</drawSize>
+                    </graphicData>
+                    <uiIconScale>0.6</uiIconScale>
+                    <defaultPlacingRot>South</defaultPlacingRot>
+                    <building>
+                        <defaultStorageSettings>
+                            <priority>Normal</priority>
+                        </defaultStorageSettings>
+                    </building>
+                    <costList>
+                        <Steel>40</Steel>
+                        <ComponentIndustrial>1</ComponentIndustrial>
+                    </costList>
+                    <statBases>
+                        <MaxHitPoints>70</MaxHitPoints>
+                        <Mass>15</Mass>
+                        <WorkToBuild>1500</WorkToBuild>
+                        <Flammability>0.5</Flammability>
+                    </statBases>
+                    <size>(1,1)</size>
+                    <comps>
+                        <li Class="CompProperties_Power">
+                            <compClass>CompPowerTrader</compClass>
+                            <basePowerConsumption>80</basePowerConsumption>
+                        </li>
+                        <li Class="VendingMachines.CompProperties_VendingMachine">
+                            <compClass>VendingMachines.CompVendingMachine</compClass>
+                            <noToggle>true</noToggle>
+                        </li>
+                    </comps>
+                </ThingDef>
+            </value>
+        </match>
+    </Operation>
+</Patch>
