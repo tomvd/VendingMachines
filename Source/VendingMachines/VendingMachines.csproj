@@ -33,7 +33,6 @@
         </PackageReference>
         <PackageReference Include="Krafs.Rimworld.Ref" Version="*" GeneratePathProperty="true" />
         <!-- Use Version="*-*" to get the latest beta! -->
-        <PackageReference Include="Lib.Harmony" Version="*" ExcludeAssets="runtime" />
     </ItemGroup>
     <ItemGroup>
         <Publicize Include="Assembly-CSharp" />

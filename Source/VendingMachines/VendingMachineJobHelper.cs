@@ -17,6 +17,7 @@ namespace VendingMachines
 
 		public static bool IsVendingMachine(this Building building)
 		{
+			if (building.comps == null) return false;
 			return building.comps.Any(comp => comp is CompVendingMachine machine && machine.IsActive() && machine.IsPowered());
 		}
 	}

@@ -1,4 +1,3 @@
-using HarmonyLib;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -21,16 +20,12 @@ public static class InternalDefOf
 
 public class VendingMachinesMod : Mod
 {
-	public static Harmony harmonyInstance;
 	public static Settings Settings;
 	
 	public VendingMachinesMod(ModContentPack content) : base(content)
 	{
 		Settings = GetSettings<Settings>();
-
-		harmonyInstance = new Harmony("Adamas.VendingMachines");
-        harmonyInstance.PatchAll();
-        //Log.Message("VendingMachinesMod:start ");
+		//Log.Message("VendingMachinesMod:start ");
         
         
     }
