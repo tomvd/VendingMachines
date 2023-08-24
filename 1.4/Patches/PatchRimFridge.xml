@@ -21,6 +21,11 @@
                     </graphicData>
                     <uiIconScale>0.6</uiIconScale>
                     <defaultPlacingRot>South</defaultPlacingRot>
+                    <hasInteractionCell>true</hasInteractionCell>
+                    <interactionCellOffset>(0,0,1)</interactionCellOffset>
+                    <placeWorkers>
+                        <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+                    </placeWorkers>                    
                     <building>
                         <defaultStorageSettings>
                             <priority>Normal</priority>

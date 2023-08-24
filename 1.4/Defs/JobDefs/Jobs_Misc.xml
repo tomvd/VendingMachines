@@ -1,6 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<JobDef>
+		<defName>VendingMachines_BuyItem</defName>
+		<driverClass>VendingMachines.JobDriver_BuyItem</driverClass>
+		<reportString>Checking out TargetA.</reportString>
+		<joyMaxParticipants>1</joyMaxParticipants>
+		<joyDuration>8000</joyDuration>
+		<joyGainRate>1</joyGainRate>
+		<joyKind>Shopping</joyKind>
+	</JobDef>
+	<JobDef>
 		<defName>VendingMachines_EmptyVendingMachine</defName>
 		<driverClass>VendingMachines.JobDriver_EmptyVendingMachine</driverClass>
 		<reportString>Emptying vending machine.</reportString>

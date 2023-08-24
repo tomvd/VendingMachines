@@ -9,6 +9,11 @@
         <castEdgeShadows>true</castEdgeShadows>
         <pathCost>50</pathCost>
         <defaultPlacingRot>South</defaultPlacingRot>
+        <hasInteractionCell>true</hasInteractionCell>
+        <interactionCellOffset>(0,0,1)</interactionCellOffset>
+        <placeWorkers>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>        
         <statBases>
             <Flammability>1.0</Flammability>
             <Beauty>0.5</Beauty>

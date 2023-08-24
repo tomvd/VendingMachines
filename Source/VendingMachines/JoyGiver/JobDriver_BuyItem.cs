@@ -13,8 +13,8 @@ namespace VendingMachines
     public class JobDriver_BuyItem : JobDriver
     {
         //Constants
-        public const int MinShoppingDuration = 75;
-        public const int MaxShoppingDuration = 300;
+        public const int MinShoppingDuration = 40;
+        public const int MaxShoppingDuration = 80;
 
         //Properties
         protected Thing Item => job.targetA.Thing;
@@ -39,11 +39,8 @@ namespace VendingMachines
 
             if (TargetThingA != null)
             {
-                Toil reserveTargetA = Toils_Reserve.Reserve(TargetIndex.A);
-
-                yield return reserveTargetA;
-                yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch)
-                    .FailOnDespawnedNullOrForbidden(TargetIndex.A);
+                yield return Toils_Reserve.Reserve(TargetIndex.A);
+                yield return Toils_Goto.GotoThing(TargetIndex.B, PathEndMode.InteractionCell);
 
                 int duration = Rand.Range(MinShoppingDuration, MaxShoppingDuration);
                 yield return Toils_General.Wait(duration).FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);

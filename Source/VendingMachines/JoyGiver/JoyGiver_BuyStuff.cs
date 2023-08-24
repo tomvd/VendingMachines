@@ -13,7 +13,7 @@ namespace VendingMachines
 {
     public class JoyGiver_BuyStuff : JoyGiver
     {
-        private readonly JobDef jobDefBuy = DefDatabase<JobDef>.GetNamed("BuyItem");
+        private readonly JobDef jobDefBuy = DefDatabase<JobDef>.GetNamed("VendingMachines_BuyItem");
         public JoyGiverDefShopping Def => (JoyGiverDefShopping) def;
         private readonly Dictionary<int, List<ulong>> recentlyLookedAt = new Dictionary<int, List<ulong>>(); // Pawn ID, list of cell hashes
         protected virtual int OptimalMoneyForShopping => 30;
@@ -32,9 +32,10 @@ namespace VendingMachines
             List<Building> vendingMachines = VendingMachineJobHelper.GetActiveVendingMachines(pawn.Map);
             //Log.Message("GetActiveVendingMachines: " + vendingMachines.Count);
             if (vendingMachines.Count == 0) return 0;
-            var money = pawn.GetMoney();
+            //var money = pawn.GetMoney();
             //Log.Message(pawn.NameStringShort + " has " + money + " silver left.");
-            return Mathf.InverseLerp(1, OptimalMoneyForShopping, money)*base.GetChance(pawn);
+            //return Mathf.InverseLerp(1, OptimalMoneyForShopping, money)*base.GetChance(pawn);
+            return base.GetChance(pawn);
         }
 
         public override Job TryGiveJob(Pawn pawn)

@@ -69,7 +69,7 @@ namespace VendingMachines
             if (price > 0)
             {
                 inventoryContainer.TryTransferToContainer(silver, MainContainer, Mathf.CeilToInt(price));
-                totalSold += price;
+                totalSold += Mathf.CeilToInt(price);
             }
         }
 

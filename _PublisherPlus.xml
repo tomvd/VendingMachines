@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Excluded>
+    <exclude>.git</exclude>
+    <exclude>1.4\Assemblies\0MultiplayerAPI.dll</exclude>
+    <exclude>1.4\Assemblies\Hospitality.dll</exclude>
+    <exclude>Source</exclude>
+    <exclude>Textures\Things\Building\VendingMachine\VendingMachine_east.afdesign</exclude>
+    <exclude>Textures\Things\Building\VendingMachine\VendingMachine_south.afdesign</exclude>
+    <exclude>Textures\UI\Commands\AsGuest.png</exclude>
+    <exclude>Textures\UI\Commands\ButtonNumberAuto.png</exclude>
+    <exclude>Textures\UI\Commands\ButtonNumberDown.png</exclude>
+    <exclude>Textures\UI\Commands\ButtonNumberUp.png</exclude>
+    <exclude>Textures\UI\Commands\PSDs</exclude>
+  </Excluded>
+</Configuration>
