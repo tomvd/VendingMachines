@@ -38,9 +38,6 @@
         <Publicize Include="Assembly-CSharp" />
     </ItemGroup>
     <ItemGroup>
-      <Folder Include="Utilities" />
-    </ItemGroup>
-    <ItemGroup>
       <Reference Include="Hospitality">
         <HintPath>..\..\..\Hospitality\1.4\Assemblies\Hospitality.dll</HintPath>
       </Reference>

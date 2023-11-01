@@ -36,7 +36,7 @@ namespace VendingMachines
         {
             base.PostExposeData();
             Scribe_Values.Look(ref isActive, "isActive");
-            Scribe_Values.Look(ref pricing, "pricing");
+            Scribe_Values.Look(ref pricing, "pricing", 2);
             Scribe_Values.Look(ref lastEmptyTick, "lastEmptyTick");
             Scribe_Values.Look(ref totalSold, "totalSold");
             Scribe_Deep.Look(ref silverContainer, "silverContainer");

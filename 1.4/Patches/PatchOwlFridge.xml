@@ -28,6 +28,7 @@
                         <li>PlaceWorker_PreventInteractionSpotOverlap</li>
                     </placeWorkers>                    
                     <building>
+                        <joyKind>Shopping</joyKind>
                         <defaultStorageSettings>
                             <priority>Normal</priority>
                         </defaultStorageSettings>

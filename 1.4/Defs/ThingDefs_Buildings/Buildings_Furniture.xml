@@ -19,6 +19,7 @@
             <Beauty>0.5</Beauty>
         </statBases>
         <building>
+            <joyKind>Shopping</joyKind>
             <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
             <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
             <maxItemsInCell>3</maxItemsInCell>

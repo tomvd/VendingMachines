@@ -15,27 +15,15 @@ namespace VendingMachines
     {
         private readonly JobDef jobDefBuy = DefDatabase<JobDef>.GetNamed("VendingMachines_BuyItem");
         public JoyGiverDefShopping Def => (JoyGiverDefShopping) def;
-        private readonly Dictionary<int, List<ulong>> recentlyLookedAt = new Dictionary<int, List<ulong>>(); // Pawn ID, list of cell hashes
-        protected virtual int OptimalMoneyForShopping => 30;
-
-        public override void GetSearchSet(Pawn pawn, List<Thing> outCandidates)
+        /*public override void GetSearchSet(Pawn pawn, List<Thing> outCandidates)
         {
             outCandidates.Clear();
             outCandidates.AddRange(pawn.Map.listerThings.ThingsInGroup(Def.requestGroup));
-        }
-
-        public override float GetChance(Pawn pawn)
+        }*/
+        
+        public override bool CanBeGivenTo(Pawn pawn)
         {
-            if (!pawn.IsArrivedGuest(out _)) return 0;
-            //if (!pawn.MayBuy()) return 0;
-            //if (pawn.GetShoppingArea() == null) return 0;
-            List<Building> vendingMachines = VendingMachineJobHelper.GetActiveVendingMachines(pawn.Map);
-            //Log.Message("GetActiveVendingMachines: " + vendingMachines.Count);
-            if (vendingMachines.Count == 0) return 0;
-            //var money = pawn.GetMoney();
-            //Log.Message(pawn.NameStringShort + " has " + money + " silver left.");
-            //return Mathf.InverseLerp(1, OptimalMoneyForShopping, money)*base.GetChance(pawn);
-            return base.GetChance(pawn);
+            return pawn.IsArrivedGuest(out _) && base.CanBeGivenTo(pawn);
         }
 
         public override Job TryGiveJob(Pawn pawn)
@@ -43,14 +31,9 @@ namespace VendingMachines
             List<Building> vendingMachines = VendingMachineJobHelper.GetActiveVendingMachines(pawn.Map);
             //Log.Message("GetActiveVendingMachines: " + vendingMachines.Count);
             if (vendingMachines.Count == 0) return null;
-            //var shoppingArea = pawn?.GetShoppingArea();
-            //if (shoppingArea == null) return null;
 
             var map = pawn.MapHeld;
             var requiresFoodFactor = GuestUtility.GetRequiresFoodFactor(pawn);
-            //var things = shoppingArea.ActiveCells.Where(cell => !HasRecentlyLookedAt(pawn, cell)).SelectMany(cell => map.thingGrid.ThingsListAtFast(cell))
-//                .Where(t => t != null && ItemUtility.IsBuyableAtAll(pawn, t) && Qualifies(t, pawn)).ToList();
-//            var storage = shoppingArea.ActiveCells.Where(cell => !HasRecentlyLookedAt(pawn, cell)).Select(cell=>map.edificeGrid[cell]).OfType<Building_Storage>();
             var storage = vendingMachines.OfType<Building_Storage>();
             List<Thing> things = storage.SelectMany(s => s.slotGroup.HeldThings.Where(t => ItemUtility.IsBuyableNow(pawn, t) && Qualifies(t, pawn))).ToList();
             

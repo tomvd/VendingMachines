@@ -18,6 +18,7 @@ public static class InternalDefOf
 	public static JobDef VendingMachines_EmptyVendingMachine;
 }
 
+[StaticConstructorOnStartup]
 public class VendingMachinesMod : Mod
 {
 	public static Settings Settings;
