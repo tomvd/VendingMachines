@@ -104,4 +104,35 @@
             </li>            
         </comps>
     </ThingDef>
+    
+    <ThingDef ParentName="VendingMachineBase">
+        <defName>MedievalVendingMachine</defName>
+        <label>medieval vending machine</label>
+        <description>A vending machine for guests that requires no power.</description>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Shelf</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3,2)</drawSize>
+        </graphicData>
+        <costStuffCount>40</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+            <li>Stony</li>
+        </stuffCategories>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints> 
+            <Mass>16</Mass>
+            <WorkToBuild>1000</WorkToBuild>
+            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+        </statBases>
+        <size>(2,1)</size>
+        <comps>
+            <li Class="CompProperties_Styleable" />
+            <li Class="VendingMachines.CompProperties_VendingMachine">
+                <compClass>VendingMachines.CompVendingMachine</compClass>
+                <noToggle>true</noToggle>
+            </li>
+        </comps>
+    </ThingDef>    
 </Defs>
