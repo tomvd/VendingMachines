@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WorkGiverDef>
+    <defName>VendingMachines_WithdrawVendingMachineEarnings</defName>
+    <label>empty vending machine</label>
+    <giverClass>VendingMachines.WorkGiver_EmptyVendingMachine</giverClass>
+    <workType>Hauling</workType>
+    <priorityInType>18</priorityInType>
+    <verb>empty vending machine</verb>
+    <gerund>emptying vending machine</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+</Defs>

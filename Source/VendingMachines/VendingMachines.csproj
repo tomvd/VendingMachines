@@ -4,34 +4,47 @@
     <PropertyGroup>
         <RootNamespace>VendingMachines</RootNamespace>
         <AssemblyName>VendingMachines</AssemblyName>
-        <TargetFramework>net472</TargetFramework>
+        <TargetFramework>net48</TargetFramework>
         <LangVersion>latest</LangVersion>
         <PlatformTarget>x64</PlatformTarget>
-        <OutputPath>..\..\1.4\Assemblies\</OutputPath>
+        <OutputPath>..\..\1.5\Assemblies\</OutputPath>
         <Optimize>true</Optimize>
         <DebugType>none</DebugType>
         <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     </PropertyGroup>
 
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-        <DefineConstants>TRACE;NDEBUG</DefineConstants> <!-- All published builds have to be built as 'release' because of the debug flag! -->
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>../../1.5/Assemblies</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
-        <AllowUnsafeBlocks>true</AllowUnsafeBlocks> <!-- Unsafe is required for publicising! -->
-        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    </PropertyGroup>
-
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-        <DefineConstants>TRACE;DEBUG</DefineConstants>
-        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>none</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>../../1.5/Assemblies</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Krafs.Publicizer" Version="1.0.3">
+        <PackageReference Include="Krafs.Publicizer">
+            <Version>1.0.3</Version>
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="Krafs.Rimworld.Ref" Version="*" GeneratePathProperty="true" />
+        <PackageReference Include="Krafs.Rimworld.Ref">
+            <Version>*-*</Version>
+            <ExcludeAssets>runtime</ExcludeAssets>
+            <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
         <!-- Use Version="*-*" to get the latest beta! -->
     </ItemGroup>
     <ItemGroup>
@@ -39,7 +52,10 @@
     </ItemGroup>
     <ItemGroup>
       <Reference Include="Hospitality">
-        <HintPath>..\..\..\Hospitality\1.4\Assemblies\Hospitality.dll</HintPath>
+        <HintPath>..\..\..\Hospitality\1.5\Assemblies\Hospitality.dll</HintPath>
       </Reference>
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Properties\" />
     </ItemGroup>
 </Project>
