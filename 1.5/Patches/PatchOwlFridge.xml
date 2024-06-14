@@ -32,6 +32,7 @@
                         <defaultStorageSettings>
                             <priority>Normal</priority>
                         </defaultStorageSettings>
+                        <groupingLabel>Fridge Vending Machine</groupingLabel>
                     </building>
                     <costList>
                         <Steel>40</Steel>

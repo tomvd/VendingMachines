@@ -3,7 +3,7 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VendingMachines\Sour
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VendingMachines\Source\VendingMachines\obj\Release\VendingMachines.GeneratedMSBuildEditorConfig.editorconfig
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VendingMachines\Source\VendingMachines\obj\Release\VendingMachines.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VendingMachines\Source\VendingMachines\obj\Release\VendingMachines.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VendingMachines\Source\VendingMachines\obj\Release\VendingMachines.csproj.CopyComplete
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VendingMachines\Source\VendingMachines\obj\Release\VendingMachines.AssemblyInfoInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VendingMachines\Source\VendingMachines\obj\Release\VendingMachines.AssemblyInfo.cs
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VendingMachines\1.5\Assemblies\VendingMachines.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VendingMachines\Source\VendingMachines\obj\Release\VendingM.816BF3AE.Up2Date

@@ -18,23 +18,27 @@ namespace VendingMachines
         {
             var vendingMachine = t.TryGetComp<CompVendingMachine>();
             if (vendingMachine == null) return false;
-            return vendingMachine.ShouldBeEmptied() && pawn.CanReserve(t, 1, 1);
+            if (vendingMachine.ShouldBeEmptied() && pawn.CanReserve(t, 1, 1))
+            {
+                var silver = vendingMachine?.GetDirectlyHeldThings()?.FirstOrDefault();
+                if (silver != null)
+                {
+                    if (StoreUtility.TryFindBestBetterStorageFor(silver, pawn, pawn.Map,
+                            StoreUtility.CurrentStoragePriorityOf(silver), pawn.Faction, out _, out _))
+                    {
+                        var haulJob = HaulAIUtility.HaulToStorageJob(pawn, silver);
+                        if (haulJob != null) return true;
+                    }
+                }
+            }
+            return false;
         }
 
         public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
             var vendingMachine = t.TryGetComp<CompVendingMachine>();
             var silver = vendingMachine?.GetDirectlyHeldThings()?.FirstOrDefault();
-            if (silver != null)
-            {
-                if (StoreUtility.TryFindBestBetterStorageFor(silver, pawn, pawn.Map, StoreUtility.CurrentStoragePriorityOf(silver), pawn.Faction, out _, out _))
-                {
-                    var haulJob = HaulAIUtility.HaulToStorageJob(pawn, silver);
-                    if (haulJob != null)
-                        return JobMaker.MakeJob(InternalDefOf.VendingMachines_EmptyVendingMachine, t, silver);
-                }
-            }
-            return null;
+            return JobMaker.MakeJob(InternalDefOf.VendingMachines_EmptyVendingMachine, t, silver);
         }
     }
 }

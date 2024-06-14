@@ -31,16 +31,17 @@
                         <defaultStorageSettings>
                             <priority>Normal</priority>
                         </defaultStorageSettings>
+                        <groupingLabel>Fridge Vending Machine</groupingLabel>
                     </building>
                     <costList>
                         <Steel>40</Steel>
                         <ComponentIndustrial>1</ComponentIndustrial>
                     </costList>
                     <statBases>
-                        <MaxHitPoints>70</MaxHitPoints>
-                        <Mass>15</Mass>
-                        <WorkToBuild>1500</WorkToBuild>
-                        <Flammability>0.5</Flammability>
+                        <Mass>30</Mass>
+                        <MaxHitPoints>100</MaxHitPoints>
+                        <WorkToBuild>750</WorkToBuild>
+                        <Flammability>1.0</Flammability>
                     </statBases>
                     <size>(1,1)</size>
                     <comps>

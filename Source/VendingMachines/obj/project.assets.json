@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.8": {
+    ".NETFramework,Version=v4.7.2": {
       "Krafs.Publicizer/1.0.3": {
         "type": "package",
         "build": {
@@ -9,7 +9,7 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.5.4055-beta": {
+      "Krafs.Rimworld.Ref/1.5.4082-beta": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
@@ -116,17 +116,17 @@
         "krafs.publicizer.nuspec"
       ]
     },
-    "Krafs.Rimworld.Ref/1.5.4055-beta": {
-      "sha512": "fHs3Lw2OJJTCXQ29kg6auFuqz+22Xe+9vjjgmmnoxZpwi3ryVUG/cjXXjr0Vn4nGfITn2tKU4G2zqJNTMR+Ejg==",
+    "Krafs.Rimworld.Ref/1.5.4082-beta": {
+      "sha512": "Ddvq6KThdcvWDR8xVSMt1/TO6dMl+xWWG59xiqPRpJuxpnJxNoUsvR2Ng4uVrSOmQYd51QG0et2AS55Jc33bCA==",
       "type": "package",
-      "path": "krafs.rimworld.ref/1.5.4055-beta",
+      "path": "krafs.rimworld.ref/1.5.4082-beta",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
         "README.md",
         "icon.png",
-        "krafs.rimworld.ref.1.5.4055-beta.nupkg.sha512",
+        "krafs.rimworld.ref.1.5.4082-beta.nupkg.sha512",
         "krafs.rimworld.ref.nuspec",
         "ref/net472/Assembly-CSharp-firstpass.dll",
         "ref/net472/Assembly-CSharp.dll",
@@ -217,7 +217,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.8": [
+    ".NETFramework,Version=v4.7.2": [
       "Krafs.Publicizer >= 1.0.3",
       "Krafs.Rimworld.Ref >= *-*"
     ]
@@ -239,15 +239,15 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net48"
+        "net472"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net48": {
-          "targetAlias": "net48",
+        "net472": {
+          "targetAlias": "net472",
           "projectReferences": {}
         }
       },
@@ -255,11 +255,16 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
-      "net48": {
-        "targetAlias": "net48",
+      "net472": {
+        "targetAlias": "net472",
         "dependencies": {
           "Krafs.Publicizer": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -273,7 +278,7 @@
             "version": "[*-*, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }

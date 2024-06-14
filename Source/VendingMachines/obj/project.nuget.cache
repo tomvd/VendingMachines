@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "z4gVTrQsv2Lwrae8sQUeJnub5DxoxsvSc5ejn3pbDTqu5WEIRttbjMDLnoyYnanUzZVXRJHhHPB6/COFxySPQQ==",
+  "dgSpecHash": "CqJ5vft+znT3eq3+sdZC9EFU95EM3Lbc3j8TLb1kcG9uDhYX3zURmURIdtBUPIjtDWTcCKJkuX3EuXu5nBw97A==",
   "success": true,
   "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VendingMachines\\Source\\VendingMachines\\VendingMachines.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tomvd\\.nuget\\packages\\krafs.publicizer\\1.0.3\\krafs.publicizer.1.0.3.nupkg.sha512",
-    "C:\\Users\\tomvd\\.nuget\\packages\\krafs.rimworld.ref\\1.5.4055-beta\\krafs.rimworld.ref.1.5.4055-beta.nupkg.sha512"
+    "C:\\Users\\tomvd\\.nuget\\packages\\krafs.rimworld.ref\\1.5.4082-beta\\krafs.rimworld.ref.1.5.4082-beta.nupkg.sha512"
   ],
   "logs": []
 }
