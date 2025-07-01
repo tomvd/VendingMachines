@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>GuestExpensiveVendingmachine</defName>
+    <durationDays>5</durationDays>
+    <stackedEffectMultiplier>0.98</stackedEffectMultiplier>
+	<stackLimit>10</stackLimit>
+    <stages>
+      <li>
+        <label>expensive vendingmachine</label>
+        <description>I had to pay a lot at a vending machine.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+	<nullifyingTraits>
+	  <li>Kind</li>
+	  <li>Ascetic</li>
+	</nullifyingTraits>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>GuestCheapVendingmachine</defName>
+    <durationDays>5</durationDays>
+    <stackedEffectMultiplier>0.98</stackedEffectMultiplier>
+	<stackLimit>10</stackLimit>
+    <stages>
+      <li>
+        <label>cheap vendingmachine</label>
+        <description>That was a cheap vending machine.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>GuestFreeVendingmachine</defName>
+        <durationDays>5</durationDays>
+        <stackedEffectMultiplier>0.98</stackedEffectMultiplier>
+        <stackLimit>10</stackLimit>
+        <stages>
+            <li>
+                <label>free vendingmachine</label>
+                <description>Did not have to pay anything at a vending machine.</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>    
+  
+</Defs>

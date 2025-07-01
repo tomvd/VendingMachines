@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Hospitality.Utilities;
 using RimWorld;
 using Verse;
 using Verse.AI;
@@ -20,13 +19,13 @@ namespace VendingMachines
             if (vendingMachine == null) return false;
             if (vendingMachine.ShouldBeEmptied() && pawn.CanReserve(t, 1, 1))
             {
-                var silver = vendingMachine?.GetDirectlyHeldThings()?.FirstOrDefault();
+                var silver = vendingMachine.GetDirectlyHeldThings()?.FirstOrDefault();
                 if (silver != null)
                 {
                     if (StoreUtility.TryFindBestBetterStorageFor(silver, pawn, pawn.Map,
                             StoreUtility.CurrentStoragePriorityOf(silver), pawn.Faction, out _, out _))
                     {
-                        var haulJob = HaulAIUtility.HaulToStorageJob(pawn, silver);
+                        var haulJob = HaulAIUtility.HaulToStorageJob(pawn, silver, false);
                         if (haulJob != null) return true;
                     }
                 }

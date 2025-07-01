@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <Hospitality.JoyGiverDefShopping>
+        <defName>BuyVendingMachineFood</defName>
+        <giverClass>VendingMachines.JoyGiver_BuyStuff</giverClass>
+        <baseChance>3</baseChance>
+        <joyKind>Shopping</joyKind>
+        <desireSit>false</desireSit>
+        <jobDef>VendingMachines_BuyItem</jobDef>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </Hospitality.JoyGiverDefShopping>
+
+    <Hospitality.JoyGiverDefShopping>
+        <defName>BuyVendingMachineStuff</defName>
+        <giverClass>VendingMachines.JoyGiver_BuyStuff</giverClass>
+        <baseChance>3</baseChance>
+        <joyKind>Shopping</joyKind>
+        <desireSit>false</desireSit>
+        <jobDef>VendingMachines_BuyItem</jobDef>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </Hospitality.JoyGiverDefShopping>
+
+</Defs>

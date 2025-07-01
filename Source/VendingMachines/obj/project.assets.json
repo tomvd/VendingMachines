@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.7.2": {
+    ".NETFramework,Version=v4.8": {
       "Krafs.Publicizer/1.0.3": {
         "type": "package",
         "build": {
@@ -9,30 +9,42 @@
           "build/Krafs.Publicizer.targets": {}
         }
       },
-      "Krafs.Rimworld.Ref/1.5.4082-beta": {
+      "Krafs.Rimworld.Ref/1.6.4507-beta": {
         "type": "package",
         "compile": {
           "ref/net472/Assembly-CSharp-firstpass.dll": {},
           "ref/net472/Assembly-CSharp.dll": {},
           "ref/net472/ISharpZipLib.dll": {},
-          "ref/net472/Mono.Posix.dll": {},
           "ref/net472/Mono.Security.dll": {},
           "ref/net472/NAudio.dll": {},
           "ref/net472/NVorbis.dll": {},
           "ref/net472/System.ComponentModel.Composition.dll": {},
           "ref/net472/System.Configuration.dll": {},
           "ref/net472/System.Core.dll": {},
+          "ref/net472/System.Data.DataSetExtensions.dll": {},
+          "ref/net472/System.Data.dll": {},
+          "ref/net472/System.Drawing.dll": {},
+          "ref/net472/System.EnterpriseServices.dll": {},
+          "ref/net472/System.IO.Compression.FileSystem.dll": {},
+          "ref/net472/System.IO.Compression.dll": {},
+          "ref/net472/System.Net.Http.dll": {},
+          "ref/net472/System.Numerics.dll": {},
           "ref/net472/System.Runtime.Serialization.dll": {},
           "ref/net472/System.Runtime.dll": {},
           "ref/net472/System.Security.dll": {},
           "ref/net472/System.ServiceModel.Internals.dll": {},
+          "ref/net472/System.Transactions.dll": {},
           "ref/net472/System.Xml.Linq.dll": {},
           "ref/net472/System.Xml.dll": {},
           "ref/net472/System.dll": {},
+          "ref/net472/Unity.AI.Navigation.dll": {},
           "ref/net472/Unity.Burst.Unsafe.dll": {},
           "ref/net472/Unity.Burst.dll": {},
+          "ref/net472/Unity.Collections.LowLevel.ILSupport.dll": {},
+          "ref/net472/Unity.Collections.dll": {},
           "ref/net472/Unity.Mathematics.dll": {},
           "ref/net472/Unity.MemoryProfiler.dll": {},
+          "ref/net472/Unity.Profiling.Core.dll": {},
           "ref/net472/Unity.TextMeshPro.dll": {},
           "ref/net472/UnityEngine.AIModule.dll": {},
           "ref/net472/UnityEngine.ARModule.dll": {},
@@ -44,10 +56,12 @@
           "ref/net472/UnityEngine.ClothModule.dll": {},
           "ref/net472/UnityEngine.ClusterInputModule.dll": {},
           "ref/net472/UnityEngine.ClusterRendererModule.dll": {},
+          "ref/net472/UnityEngine.ContentLoadModule.dll": {},
           "ref/net472/UnityEngine.CoreModule.dll": {},
           "ref/net472/UnityEngine.CrashReportingModule.dll": {},
           "ref/net472/UnityEngine.DSPGraphModule.dll": {},
           "ref/net472/UnityEngine.DirectorModule.dll": {},
+          "ref/net472/UnityEngine.GIModule.dll": {},
           "ref/net472/UnityEngine.GameCenterModule.dll": {},
           "ref/net472/UnityEngine.GridModule.dll": {},
           "ref/net472/UnityEngine.HotReloadModule.dll": {},
@@ -57,11 +71,14 @@
           "ref/net472/UnityEngine.InputModule.dll": {},
           "ref/net472/UnityEngine.JSONSerializeModule.dll": {},
           "ref/net472/UnityEngine.LocalizationModule.dll": {},
+          "ref/net472/UnityEngine.NVIDIAModule.dll": {},
           "ref/net472/UnityEngine.ParticleSystemModule.dll": {},
           "ref/net472/UnityEngine.PerformanceReportingModule.dll": {},
           "ref/net472/UnityEngine.Physics2DModule.dll": {},
           "ref/net472/UnityEngine.PhysicsModule.dll": {},
           "ref/net472/UnityEngine.ProfilerModule.dll": {},
+          "ref/net472/UnityEngine.PropertiesModule.dll": {},
+          "ref/net472/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll": {},
           "ref/net472/UnityEngine.ScreenCaptureModule.dll": {},
           "ref/net472/UnityEngine.SharedInternalsModule.dll": {},
           "ref/net472/UnityEngine.SpriteMaskModule.dll": {},
@@ -72,16 +89,18 @@
           "ref/net472/UnityEngine.TLSModule.dll": {},
           "ref/net472/UnityEngine.TerrainModule.dll": {},
           "ref/net472/UnityEngine.TerrainPhysicsModule.dll": {},
-          "ref/net472/UnityEngine.TextCoreModule.dll": {},
+          "ref/net472/UnityEngine.TextCoreFontEngineModule.dll": {},
+          "ref/net472/UnityEngine.TextCoreTextEngineModule.dll": {},
           "ref/net472/UnityEngine.TextRenderingModule.dll": {},
           "ref/net472/UnityEngine.TilemapModule.dll": {},
           "ref/net472/UnityEngine.UI.dll": {},
           "ref/net472/UnityEngine.UIElementsModule.dll": {},
           "ref/net472/UnityEngine.UIModule.dll": {},
-          "ref/net472/UnityEngine.UNETModule.dll": {},
           "ref/net472/UnityEngine.UmbraModule.dll": {},
+          "ref/net472/UnityEngine.UnityAnalyticsCommonModule.dll": {},
           "ref/net472/UnityEngine.UnityAnalyticsModule.dll": {},
           "ref/net472/UnityEngine.UnityConnectModule.dll": {},
+          "ref/net472/UnityEngine.UnityCurlModule.dll": {},
           "ref/net472/UnityEngine.UnityTestProtocolModule.dll": {},
           "ref/net472/UnityEngine.UnityWebRequestAssetBundleModule.dll": {},
           "ref/net472/UnityEngine.UnityWebRequestAudioModule.dll": {},
@@ -92,11 +111,13 @@
           "ref/net472/UnityEngine.VRModule.dll": {},
           "ref/net472/UnityEngine.VehiclesModule.dll": {},
           "ref/net472/UnityEngine.VideoModule.dll": {},
+          "ref/net472/UnityEngine.VirtualTexturingModule.dll": {},
           "ref/net472/UnityEngine.WindModule.dll": {},
           "ref/net472/UnityEngine.XRModule.dll": {},
           "ref/net472/UnityEngine.dll": {},
           "ref/net472/com.rlabrecque.steamworks.net.dll": {},
-          "ref/net472/mscorlib.dll": {}
+          "ref/net472/mscorlib.dll": {},
+          "ref/net472/netstandard.dll": {}
         }
       }
     }
@@ -116,39 +137,51 @@
         "krafs.publicizer.nuspec"
       ]
     },
-    "Krafs.Rimworld.Ref/1.5.4082-beta": {
-      "sha512": "Ddvq6KThdcvWDR8xVSMt1/TO6dMl+xWWG59xiqPRpJuxpnJxNoUsvR2Ng4uVrSOmQYd51QG0et2AS55Jc33bCA==",
+    "Krafs.Rimworld.Ref/1.6.4507-beta": {
+      "sha512": "stgP2V2OScn0CajRny4aepwQrEZrMoqiCQBWp2JdiN6JqzwWA9lDEqcGmxcBF9WZD6XGINfdS11xT3ugs6VTQw==",
       "type": "package",
-      "path": "krafs.rimworld.ref/1.5.4082-beta",
+      "path": "krafs.rimworld.ref/1.6.4507-beta",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
         "README.md",
         "icon.png",
-        "krafs.rimworld.ref.1.5.4082-beta.nupkg.sha512",
+        "krafs.rimworld.ref.1.6.4507-beta.nupkg.sha512",
         "krafs.rimworld.ref.nuspec",
         "ref/net472/Assembly-CSharp-firstpass.dll",
         "ref/net472/Assembly-CSharp.dll",
         "ref/net472/ISharpZipLib.dll",
-        "ref/net472/Mono.Posix.dll",
         "ref/net472/Mono.Security.dll",
         "ref/net472/NAudio.dll",
         "ref/net472/NVorbis.dll",
         "ref/net472/System.ComponentModel.Composition.dll",
         "ref/net472/System.Configuration.dll",
         "ref/net472/System.Core.dll",
+        "ref/net472/System.Data.DataSetExtensions.dll",
+        "ref/net472/System.Data.dll",
+        "ref/net472/System.Drawing.dll",
+        "ref/net472/System.EnterpriseServices.dll",
+        "ref/net472/System.IO.Compression.FileSystem.dll",
+        "ref/net472/System.IO.Compression.dll",
+        "ref/net472/System.Net.Http.dll",
+        "ref/net472/System.Numerics.dll",
         "ref/net472/System.Runtime.Serialization.dll",
         "ref/net472/System.Runtime.dll",
         "ref/net472/System.Security.dll",
         "ref/net472/System.ServiceModel.Internals.dll",
+        "ref/net472/System.Transactions.dll",
         "ref/net472/System.Xml.Linq.dll",
         "ref/net472/System.Xml.dll",
         "ref/net472/System.dll",
+        "ref/net472/Unity.AI.Navigation.dll",
         "ref/net472/Unity.Burst.Unsafe.dll",
         "ref/net472/Unity.Burst.dll",
+        "ref/net472/Unity.Collections.LowLevel.ILSupport.dll",
+        "ref/net472/Unity.Collections.dll",
         "ref/net472/Unity.Mathematics.dll",
         "ref/net472/Unity.MemoryProfiler.dll",
+        "ref/net472/Unity.Profiling.Core.dll",
         "ref/net472/Unity.TextMeshPro.dll",
         "ref/net472/UnityEngine.AIModule.dll",
         "ref/net472/UnityEngine.ARModule.dll",
@@ -160,10 +193,12 @@
         "ref/net472/UnityEngine.ClothModule.dll",
         "ref/net472/UnityEngine.ClusterInputModule.dll",
         "ref/net472/UnityEngine.ClusterRendererModule.dll",
+        "ref/net472/UnityEngine.ContentLoadModule.dll",
         "ref/net472/UnityEngine.CoreModule.dll",
         "ref/net472/UnityEngine.CrashReportingModule.dll",
         "ref/net472/UnityEngine.DSPGraphModule.dll",
         "ref/net472/UnityEngine.DirectorModule.dll",
+        "ref/net472/UnityEngine.GIModule.dll",
         "ref/net472/UnityEngine.GameCenterModule.dll",
         "ref/net472/UnityEngine.GridModule.dll",
         "ref/net472/UnityEngine.HotReloadModule.dll",
@@ -173,11 +208,14 @@
         "ref/net472/UnityEngine.InputModule.dll",
         "ref/net472/UnityEngine.JSONSerializeModule.dll",
         "ref/net472/UnityEngine.LocalizationModule.dll",
+        "ref/net472/UnityEngine.NVIDIAModule.dll",
         "ref/net472/UnityEngine.ParticleSystemModule.dll",
         "ref/net472/UnityEngine.PerformanceReportingModule.dll",
         "ref/net472/UnityEngine.Physics2DModule.dll",
         "ref/net472/UnityEngine.PhysicsModule.dll",
         "ref/net472/UnityEngine.ProfilerModule.dll",
+        "ref/net472/UnityEngine.PropertiesModule.dll",
+        "ref/net472/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
         "ref/net472/UnityEngine.ScreenCaptureModule.dll",
         "ref/net472/UnityEngine.SharedInternalsModule.dll",
         "ref/net472/UnityEngine.SpriteMaskModule.dll",
@@ -188,16 +226,18 @@
         "ref/net472/UnityEngine.TLSModule.dll",
         "ref/net472/UnityEngine.TerrainModule.dll",
         "ref/net472/UnityEngine.TerrainPhysicsModule.dll",
-        "ref/net472/UnityEngine.TextCoreModule.dll",
+        "ref/net472/UnityEngine.TextCoreFontEngineModule.dll",
+        "ref/net472/UnityEngine.TextCoreTextEngineModule.dll",
         "ref/net472/UnityEngine.TextRenderingModule.dll",
         "ref/net472/UnityEngine.TilemapModule.dll",
         "ref/net472/UnityEngine.UI.dll",
         "ref/net472/UnityEngine.UIElementsModule.dll",
         "ref/net472/UnityEngine.UIModule.dll",
-        "ref/net472/UnityEngine.UNETModule.dll",
         "ref/net472/UnityEngine.UmbraModule.dll",
+        "ref/net472/UnityEngine.UnityAnalyticsCommonModule.dll",
         "ref/net472/UnityEngine.UnityAnalyticsModule.dll",
         "ref/net472/UnityEngine.UnityConnectModule.dll",
+        "ref/net472/UnityEngine.UnityCurlModule.dll",
         "ref/net472/UnityEngine.UnityTestProtocolModule.dll",
         "ref/net472/UnityEngine.UnityWebRequestAssetBundleModule.dll",
         "ref/net472/UnityEngine.UnityWebRequestAudioModule.dll",
@@ -208,16 +248,18 @@
         "ref/net472/UnityEngine.VRModule.dll",
         "ref/net472/UnityEngine.VehiclesModule.dll",
         "ref/net472/UnityEngine.VideoModule.dll",
+        "ref/net472/UnityEngine.VirtualTexturingModule.dll",
         "ref/net472/UnityEngine.WindModule.dll",
         "ref/net472/UnityEngine.XRModule.dll",
         "ref/net472/UnityEngine.dll",
         "ref/net472/com.rlabrecque.steamworks.net.dll",
-        "ref/net472/mscorlib.dll"
+        "ref/net472/mscorlib.dll",
+        "ref/net472/netstandard.dll"
       ]
     }
   },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.7.2": [
+    ".NETFramework,Version=v4.8": [
       "Krafs.Publicizer >= 1.0.3",
       "Krafs.Rimworld.Ref >= *-*"
     ]
@@ -239,15 +281,15 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net472"
+        "net48"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net472": {
-          "targetAlias": "net472",
+        "net48": {
+          "targetAlias": "net48",
           "projectReferences": {}
         }
       },
@@ -263,8 +305,8 @@
       }
     },
     "frameworks": {
-      "net472": {
-        "targetAlias": "net472",
+      "net48": {
+        "targetAlias": "net48",
         "dependencies": {
           "Krafs.Publicizer": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
