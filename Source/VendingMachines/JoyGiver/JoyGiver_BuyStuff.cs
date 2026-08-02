@@ -35,7 +35,7 @@ namespace VendingMachines
             var map = pawn.MapHeld;
             var requiresFoodFactor = GuestUtility.GetRequiresFoodFactor(pawn);
             var storage = vendingMachines.OfType<Building_Storage>();
-            List<Thing> things = storage.SelectMany(s => s.slotGroup.HeldThings.Where(t => ItemUtility.IsBuyableNow(pawn, t) && Qualifies(t, pawn))).ToList();
+            List<Thing> things = storage.Where(s => s.slotGroup != null).SelectMany(s => s.slotGroup.HeldThings.Where(t => ItemUtility.IsBuyableNow(pawn, t) && Qualifies(t, pawn))).ToList();
             
             if (things.Count == 0)
             {
@@ -81,7 +81,9 @@ namespace VendingMachines
             }
 
             //Log.Message($"{pawn.NameShortColored} is going to buy {thing.LabelShort} at {thing.Position}.");
-            return new Job(jobDefBuy, thing, vendingMachines.First(cell => cell is Building_Storage b && b.slotGroup.HeldThings.Contains(thing)));
+            var storageBuilding = vendingMachines.FirstOrDefault(cell => cell is Building_Storage b && b.slotGroup?.HeldThings?.Contains(thing) == true);
+            if (storageBuilding == null) return null;
+            return new Job(jobDefBuy, thing, storageBuilding);
         }
 
         private static float Likey(Pawn pawn, Thing thing, float requiresFoodFactor)

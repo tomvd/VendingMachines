@@ -14,7 +14,8 @@ namespace VendingMachines
 
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
-            return pawn.Reserve(VendingMachine.parent, job, 1, 1, null, errorOnFailed);
+            var target = job.GetTarget(IndexVM).Thing;
+            return target != null && pawn.Reserve(target, job, 1, 1, null, errorOnFailed);
         }
 
         public override IEnumerable<Toil> MakeNewToils()

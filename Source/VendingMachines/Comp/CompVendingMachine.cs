@@ -39,7 +39,7 @@ namespace VendingMachines
             Scribe_Values.Look(ref pricing, "pricing", 2);
             Scribe_Values.Look(ref lastEmptyTick, "lastEmptyTick");
             Scribe_Values.Look(ref totalSold, "totalSold");
-            Scribe_Deep.Look(ref silverContainer, "silverContainer");
+            Scribe_Deep.Look(ref silverContainer, "silverContainer", this);
         }
 
         public bool IsActive() => isActive || Properties.noToggle;
@@ -160,7 +160,10 @@ namespace VendingMachines
 
         public override void PostDestroy(DestroyMode mode, Map previousMap)
         {
-            MainContainer.TryDropAll(parent.OccupiedRect().Cells.RandomElement(), previousMap, ThingPlaceMode.Near);
+            if (previousMap != null)
+            {
+                MainContainer.TryDropAll(parent.OccupiedRect().Cells.RandomElement(), previousMap, ThingPlaceMode.Near);
+            }
             MainContainer.ClearAndDestroyContents();
             base.PostDestroy(mode, previousMap);
         }
